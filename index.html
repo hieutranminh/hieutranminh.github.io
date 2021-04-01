@@ -30,8 +30,6 @@
             <div class="my__image">
                 <h3>TRAN MINH HIEU</h3>
                 <span>Front-End Developer</span>
-                <p>X Value <span id="x-value" style="font-family: inherit; color: black"></span></p>
-                <p>Y Value <span id="y-value" style="font-family: inherit; color: black"></span></p>
                 <img src="./images/image-profile.png" id="my-picture" alt="my-picture">
             </div>
 
@@ -329,4 +327,73 @@ semi-bold : 600
 bold : 700
 extra bold : 800
 black : 900
+-->
+
+
+<!--
+$( document ).ready(function() {
+  let myPicture = $('#my-picture')[0]
+  let widthMyPicture = myPicture.width
+  let heightMyPicture = myPicture.height
+  let pictureCenterX = myPicture.offsetLeft + (widthMyPicture / 2)
+  let pictureCenterY = myPicture.offsetTop + (heightMyPicture / 2)
+
+  // Handle animation signature
+  function changePositionImage () {
+    window.addEventListener('mousemove', function (e) {
+      let radian = Math.atan2(e.pageX - pictureCenterX, e.pageY - pictureCenterY)
+      let rot = (radian * (180/ Math.PI) * -1) + 0
+
+      if (rot > 157.5 || rot < -157.5) {
+        $('#my-picture').css("object-position","50%")
+      }
+
+      if (rot > -157.5 && rot < -112.5) {
+        $('#my-picture').css("object-position","40%")
+      }
+
+      if (rot > -112.5 && rot < -67.5) {
+        $('#my-picture').css("object-position","30%")
+      }
+
+      if (rot > -67.5 && rot < -22.5) {
+        $('#my-picture').css("object-position","70%")
+      }
+
+      if (rot > -22.5 && rot < 22.5) {
+        $('#my-picture').css("object-position","80%")
+      }
+
+      if (rot > 22.5 && rot < 67.5) {
+        $('#my-picture').css("object-position","90%")
+      }
+
+      if (rot > 67.5 && rot < 112.5) {
+        $('#my-picture').css("object-position","100%")
+      }
+
+      if (rot > 112.5 && rot < 157.5) {
+        $('#my-picture').css("object-position","60%")
+      }
+    })
+  }
+
+  // Destroy event when hover picture
+  function hoverPicture () {
+    $('#my-picture').bind('mouseover mousemove', function(e) { 
+      $('#my-picture').css("object-position","20%")
+      e.stopPropagation();
+    });
+  }
+
+  // Bind Events
+  function bindEvents () {
+    changePositionImage()
+    hoverPicture()
+  }
+
+  bindEvents();
+
+})
+
 -->
