@@ -10,8 +10,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul, ol, p {
@@ -43,35 +42,28 @@ img.icon {
 .list__icon__common {
   margin-bottom: 50px;
 }
-
 .list__icon__common li {
+  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   list-style: none;
   border-bottom: 2px solid #a49393;
   padding: 12px 0px;
 }
-
 .list__icon__common li .box {
+  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
   padding: 4px 26px;
 }
-
 .list__icon__common li .box:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -79,7 +71,6 @@ img.icon {
   height: 100%;
   background: #a49393;
 }
-
 .list__icon__common li a, .list__icon__common li span {
   display: inline-block;
   text-decoration: none;
@@ -102,23 +93,23 @@ img.icon {
 .list__social__common {
   margin-bottom: 50px;
 }
-
 .list__social__common li {
+  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 10px;
 }
-
 .list__social__common li:last-child {
   margin-bottom: 0;
 }
-
 .list__social__common li a {
   -webkit-transition: all 0.3s;
+  -khtml-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   display: block;
   padding-left: 20px;
@@ -128,7 +119,6 @@ img.icon {
   font-weight: 600;
   color: #333333;
 }
-
 .list__social__common li a:hover {
   color: #a49393;
 }
@@ -137,9 +127,8 @@ img.icon {
   position: relative;
   margin: 50px 0;
 }
-
 .timeline:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 70px;
@@ -147,40 +136,39 @@ img.icon {
   height: calc(100% - 4px);
   background: #a49393;
 }
-
 .timeline li {
+  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   position: relative;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
   list-style: none;
   margin-bottom: 35px;
 }
-
 .timeline li:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 65px;
   width: 12px;
   height: 12px;
   background: #333333;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
 }
-
 .timeline li .period {
+  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   width: 60px;
 }
-
 .timeline li .period span {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   font-size: 14px;
@@ -188,11 +176,9 @@ img.icon {
   color: #333333;
   width: 60px;
 }
-
 .timeline li .content {
   margin-left: 45px;
 }
-
 .timeline li .content h5 {
   font-size: 14px;
   text-transform: uppercase;
@@ -200,7 +186,6 @@ img.icon {
   color: #fcb3a0;
   margin-bottom: 4px;
 }
-
 .timeline li .content span {
   display: block;
   font-size: 14px;
@@ -209,19 +194,17 @@ img.icon {
   color: #3c3c3c;
   margin-bottom: 18px;
 }
-
 .timeline li .content p {
   font-size: 14px;
   font-weight: 500;
   color: #333333;
   line-height: 22px;
 }
-
 .timeline li:last-child {
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width : 1200px) {
   .timeline:before {
     left: 65px;
   }
@@ -232,82 +215,85 @@ img.icon {
     margin-left: 40px;
   }
 }
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width : 992px) {
   .timeline li .content {
     margin-left: 40px;
   }
 }
-
 .profile {
   background-color: #dfe0db 45%;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(45%, #dfe0db), color-stop(45%, #fcebe1));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dfe0db 45%), to(#fcebe1 45%));
+  background-image: -webkit-linear-gradient(top, #dfe0db 45%, #fcebe1 45%);
+  background-image: -moz-linear-gradient(top, #dfe0db 45%, #fcebe1 45%);
+  background-image: -ms-linear-gradient(top, #dfe0db 45%, #fcebe1 45%);
+  background-image: -o-linear-gradient(top, #dfe0db 45%, #fcebe1 45%);
   background-image: linear-gradient(top, #dfe0db 45%, #fcebe1 45%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#dfe0db 45%', endColorStr='#fcebe1 45%');
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr="#dfe0db 45%", endColorStr="#fcebe1 45%");
   width: 1170px;
   margin: auto;
   padding: 45px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 .profile__main {
+  display: -moz-box;
   display: -ms-flexbox;
-  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   background: #ffffff;
   padding: 50px;
 }
-
 .profile__main__left {
   width: 37%;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
+  flex-shrink: 1;
 }
-
 .profile__main__left .my__image {
   text-align: center;
   margin-bottom: 50px;
 }
-
 .profile__main__left .my__image h3 {
   font-size: 24px;
   font-weight: 600;
   color: #333333;
   margin-bottom: 10px;
 }
-
 .profile__main__left .my__image span {
   display: block;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
   font-size: 18px;
   color: #a5a5a5;
   margin-bottom: 25px;
 }
-
 .profile__main__left .my__image img {
   max-width: 250px;
   max-height: 250px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 20% 100%;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 10px #fcebe1;
+  -khtml-box-shadow: 0 0 10px #fcebe1;
+  -moz-box-shadow: 0 0 10px #fcebe1;
   -ms-box-shadow: 0 0 10px #fcebe1;
   -o-box-shadow: 0 0 10px #fcebe1;
   box-shadow: 0 0 10px #fcebe1;
 }
-
 .profile__main__left .my__contact .desc__common {
   margin-bottom: 30px;
 }
-
 .profile__main__right {
   width: 63%;
   padding-left: 5vw;
 }
-
 .profile__main__right .my__signature {
   text-align: center;
   padding: 50px 0;
 }
-
 .profile__main__right .my__signature b {
   display: block;
   font-weight: bold;
@@ -316,19 +302,30 @@ img.icon {
   margin-bottom: 20px;
   color: #333333;
 }
-
 .profile__main__right .my__signature svg {
   width: 200px;
-  fill: #3c3c3c;
+  fill: transparent;
 }
-
+.profile__main__right .my__signature svg path {
+  stroke: #333333;
+  stroke-dasharray: 1685;
+  stroke-dashoffset: 1685;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  -webkit-animation: animate-path-line 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+  -khtml-animation: animate-path-line 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+  -moz-animation: animate-path-line 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+  -ms-animation: animate-path-line 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+  -o-animation: animate-path-line 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+  animation: animate-path-line 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+.profile__main__right .my__signature p {
+  text-shadow: -8px 6px 3px #fcb3a0;
+  margin-top: 10px;
+}
 .profile__main__right .my__capabilities .soft__skill {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
   padding: 50px 0px;
 }
-
 .profile__main__right .my__capabilities .soft__skill h5 {
   font-size: 14px;
   text-transform: uppercase;
@@ -336,24 +333,29 @@ img.icon {
   color: #fcb3a0;
   margin-bottom: 20px;
 }
-
-.profile__main__right .my__capabilities .soft__skill ul li {
+.profile__main__right .my__capabilities .soft__skill__col {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.profile__main__right .my__capabilities .soft__skill__col ul {
+  width: calc((100%/3) - 10px);
+}
+.profile__main__right .my__capabilities .soft__skill__col ul li {
   list-style: none;
   font-size: 14px;
   font-weight: 500;
   color: #333333;
   margin-bottom: 20px;
 }
-
-.profile__main__right .my__capabilities .soft__skill ul li:last-child {
+.profile__main__right .my__capabilities .soft__skill__col ul li:last-child {
   margin-bottom: 0;
 }
 
-.profile__main__right .my__capabilities .soft__skill .right {
-  margin-left: 60px;
-}
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width : 1200px) {
   .profile {
     width: 100%;
     padding: 30px;
@@ -368,15 +370,13 @@ img.icon {
     width: 58%;
   }
 }
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width : 992px) {
   .profile {
     width: 100%;
     padding: 15px;
   }
   .profile__main {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .profile__main__left {
     width: 100%;
@@ -386,10 +386,55 @@ img.icon {
     padding: 0;
   }
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width : 768px) {
   .profile__main {
     padding: 15px;
   }
 }
+@-webkit-keyframes animate-path-line {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 832;
+    opacity: 1;
+  }
+}
+@-moz-keyframes animate-path-line {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 832;
+    opacity: 1;
+  }
+}
+@-ms-keyframes animate-path-line {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 832;
+    opacity: 1;
+  }
+}
+@-o-keyframes animate-path-line {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 832;
+    opacity: 1;
+  }
+}
+@keyframes animate-path-line {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 832;
+    opacity: 1;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

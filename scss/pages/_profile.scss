@@ -33,6 +33,10 @@
         img {
           max-width: 250px;
           max-height: 250px;
+          width: 250px;
+          height: 250px;
+          object-fit: cover;
+          object-position: 20% 100%;
           @include border-radius(50%);
           @include box-shadow(0, 0, 10px, #fcebe1);
         }
@@ -95,13 +99,25 @@
         }
         svg {
           width: 200px;
-          fill: #3c3c3c;
+          fill: transparent;
+          path {
+            stroke: #333333;
+            stroke-dasharray: 1685;
+            stroke-dashoffset: 1685;
+            stroke-width: 3px;
+            stroke-linejoin: round;
+            @include animation(animate-path-line 4s $ease-in-out infinite);
+          }
+        }
+
+        p {
+          @include text-shadow(-8px, 6px, 3px, #fcb3a0);
+          margin-top: 10px;
         }
       }
 
       .my__capabilities {
         .soft__skill {
-          @include flex;
           padding: 50px 0px;
           h5 {
             font-size: 14px;
@@ -110,20 +126,23 @@
             color: #fcb3a0;
             margin-bottom: 20px;
           }
-          ul {
-            li {
-              list-style: none;
-              font-size: 14px;
-              font-weight: 500;
-              color: #333333;
-              margin-bottom: 20px;
-              &:last-child {
-                margin-bottom: 0;
+          &__col {
+            @include flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            ul {
+              width: calc((100%/3) - 10px);
+              li {
+                list-style: none;
+                font-size: 14px;
+                font-weight: 500;
+                color: #333333;
+                margin-bottom: 20px;
+                &:last-child {
+                  margin-bottom: 0;
+                }
               }
             }
-          }
-          .right {
-            margin-left: 60px;
           }
         }
       }
@@ -171,5 +190,16 @@
     &__main {
       padding: 15px;
     }
+  }
+}
+
+//Animation svg loading
+@include keyframes(animate-path-line) {
+  0%{
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 832;
+    opacity: 1;
   }
 }
