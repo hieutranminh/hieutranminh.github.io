@@ -65,7 +65,7 @@
                 </ul>
 
                 <p class="desc__common">
-                    I am <b>Front-End Developer</b> and I choose <b>Front-End</b> because i really like <b>creative things</b>. I am always<b> careful at work</b> to help my projects <b>more qualified </b> before sending to customers. I always wish to develop myself at work and I hope to learn more skills from experienced people.
+                    I am <b>Front-End Developer</b> and I choose <b>Front-End</b> because i really like <b>creative things about UI/UX</b>. I am always<b> careful at work</b> to help my projects <b>more qualified </b> before sending to customers. I always wish to develop myself at work and I hope to learn more skills from experienced people.
                 </p>
 
                 <ul class="list__social__common">
@@ -166,13 +166,13 @@
                         <ul>
                             <li>HTML5</li>
                             <li>CSS3</li>
-                            <li>Javascript</li>
-                            <li>Jquery</li>
+                            <li>SASS (SCSS)</li>
+                            <li>UI/UX</li>
                         </ul>
                         <ul>
-                            <li>VueJS</li>
-                            <li>VueX</li>
-                            <li>Vue-Router</li>
+                            <li>Javascript</li>
+                            <li>Jquery</li>
+                            <li>VueJS (Vuex)</li>
                             <li>Research</li>
                         </ul>
                     </div>
@@ -245,7 +245,7 @@
                             <h5>Front-End Developer</h5>
                             <span>Freelancer</span>
                             <p>
-                                - Joined many projects with Front End Developer position <b>( Freelancer )</b> to learn and develop skills such as project of <b>Marketing challengers of  RMIT , project of Landing Pages for Oppo Reno4, project of Yadea electric bike, etc.</b>
+                                - Joined many projects with Front End Developer position <b>( Freelancer )</b> to learn and develop skills such as project of <b>Marketing challengers of  RMIT , project of Landing Pages for Oppo, project of Yadea electric bike, etc.</b>
                             </p>
                         </div>
                     </li>
@@ -313,7 +313,7 @@
 
 <script src="./js/vendor/jquery-3.4.1.min.js"></script>
 <!-- Main Script -->
-<script src="./js/home.js"></script>
+<script src="./js/home.bundle.js"></script>
 
 </body>
 </html>
@@ -327,73 +327,4 @@ semi-bold : 600
 bold : 700
 extra bold : 800
 black : 900
--->
-
-
-<!--
-$( document ).ready(function() {
-  let myPicture = $('#my-picture')[0]
-  let widthMyPicture = myPicture.width
-  let heightMyPicture = myPicture.height
-  let pictureCenterX = myPicture.offsetLeft + (widthMyPicture / 2)
-  let pictureCenterY = myPicture.offsetTop + (heightMyPicture / 2)
-
-  // Handle animation signature
-  function changePositionImage () {
-    window.addEventListener('mousemove', function (e) {
-      let radian = Math.atan2(e.pageX - pictureCenterX, e.pageY - pictureCenterY)
-      let rot = (radian * (180/ Math.PI) * -1) + 0
-
-      if (rot > 157.5 || rot < -157.5) {
-        $('#my-picture').css("object-position","50%")
-      }
-
-      if (rot > -157.5 && rot < -112.5) {
-        $('#my-picture').css("object-position","40%")
-      }
-
-      if (rot > -112.5 && rot < -67.5) {
-        $('#my-picture').css("object-position","30%")
-      }
-
-      if (rot > -67.5 && rot < -22.5) {
-        $('#my-picture').css("object-position","70%")
-      }
-
-      if (rot > -22.5 && rot < 22.5) {
-        $('#my-picture').css("object-position","80%")
-      }
-
-      if (rot > 22.5 && rot < 67.5) {
-        $('#my-picture').css("object-position","90%")
-      }
-
-      if (rot > 67.5 && rot < 112.5) {
-        $('#my-picture').css("object-position","100%")
-      }
-
-      if (rot > 112.5 && rot < 157.5) {
-        $('#my-picture').css("object-position","60%")
-      }
-    })
-  }
-
-  // Destroy event when hover picture
-  function hoverPicture () {
-    $('#my-picture').bind('mouseover mousemove', function(e) { 
-      $('#my-picture').css("object-position","20%")
-      e.stopPropagation();
-    });
-  }
-
-  // Bind Events
-  function bindEvents () {
-    changePositionImage()
-    hoverPicture()
-  }
-
-  bindEvents();
-
-})
-
 -->
