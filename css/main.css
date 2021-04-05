@@ -291,8 +291,8 @@ img.icon {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0% 100%;
-     object-position: 0% 100%;
+  -o-object-position: 20% 100%;
+     object-position: 20% 100%;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 10px #fcebe1;
   -ms-box-shadow: 0 0 10px #fcebe1;
@@ -376,6 +376,7 @@ img.icon {
   font-weight: 500;
   color: #333333;
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .profile__main__right .my__capabilities .soft__skill__col ul li:last-child {
