@@ -38,6 +38,32 @@ img.icon {
   padding: 16px 0;
   color: #333333;
   letter-spacing: 2px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title__common .btn-download {
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 20px;
+  line-height: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 3px;
+  color: #333333;
+  background: #fcb3a0;
+  font-weight: bold;
+}
+
+.title__common .btn-download:hover {
+  background: #dfe0db;
 }
 
 .list__icon__common {
