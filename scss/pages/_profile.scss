@@ -86,36 +86,15 @@
     &__right {
       width: 63%;
       padding-left: 5vw;
-      .my__signature {
-        text-align: center;
-        padding: 50px 0;
-        b {
-          display: block;
-          font-weight: bold;
-          font-size: 16px;
-          text-transform: uppercase;
-          margin-bottom: 20px;
-          color: #333333;
-        }
-        svg {
-          width: 200px;
-          fill: transparent;
-          path {
-            stroke: #333333;
-            stroke-dasharray: 1685;
-            stroke-dashoffset: 1685;
-            stroke-width: 3px;
-            stroke-linejoin: round;
-            @include animation(animate-path-line 4s $ease-in-out infinite);
+      .my__overview {
+        ul {
+          padding: 30px 0;
+          li {
+            line-height: 1.5;
+            list-style: none;
           }
         }
-
-        p {
-          @include text-shadow(-8px, 6px, 3px, #fcb3a0);
-          margin-top: 10px;
-        }
       }
-
       .my__capabilities {
         .soft__skill {
           padding: 50px 0px;
@@ -148,6 +127,68 @@
         }
       }
     }
+    .my__signature {
+      display: inline-block;
+      text-align: center;
+      padding: 0px 0 50px;
+      b {
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #333333;
+      }
+      svg {
+        width: 200px;
+        fill: transparent;
+        path {
+          stroke: #333333;
+          stroke-dasharray: 1685;
+          stroke-dashoffset: 1685;
+          stroke-width: 3px;
+          stroke-linejoin: round;
+          @include animation(animate-path-line 4s $ease-in-out infinite);
+        }
+      }
+
+      p {
+        @include text-shadow(-8px, 6px, 3px, #fcb3a0);
+        margin-top: 10px;
+      }
+    }
+  }
+  &__main--block {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .projects {
+    padding: 30px 0;
+    .item {
+      margin-bottom: 30px;
+      h4 {
+        margin-bottom: 4px;
+      }
+      p {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #000;
+      }
+      table {
+        width: 100%;
+      }
+      table, th, td {
+        border:1px solid #a49393;
+        border-collapse: collapse;
+        padding: 10px;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      th {
+        text-align: left;
+      }
+    }
   }
 }
 
@@ -164,6 +205,11 @@
       &__right {
         width: 58%;
       }
+    }
+    &__main--block {
+      display: block;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 }
