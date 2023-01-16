@@ -280,7 +280,8 @@ img.icon {
         padding: 30px 0; }
         .profile__main__right .my__overview ul li {
           line-height: 1.5;
-          list-style: none; }
+          list-style: none;
+          font-size: 14px; }
       .profile__main__right .my__capabilities .soft__skill {
         padding: 50px 0px; }
         .profile__main__right .my__capabilities .soft__skill h5 {
