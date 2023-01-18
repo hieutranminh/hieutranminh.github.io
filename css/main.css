@@ -279,7 +279,7 @@ img.icon {
       .profile__main__right .my__overview ul {
         padding: 30px 0; }
         .profile__main__right .my__overview ul li {
-          line-height: 1.5;
+          line-height: 1.8;
           list-style: none;
           font-size: 14px; }
       .profile__main__right .my__capabilities .soft__skill {
@@ -298,7 +298,7 @@ img.icon {
           justify-content: space-between;
           flex-wrap: wrap; }
           .profile__main__right .my__capabilities .soft__skill__col ul {
-            width: calc((100%/3) - 10px); }
+            width: calc((100% / 3) - 10px); }
             .profile__main__right .my__capabilities .soft__skill__col ul li {
               list-style: none;
               font-size: 14px;
@@ -353,7 +353,9 @@ img.icon {
         color: #000; }
       .profile .projects .item table {
         width: 100%; }
-      .profile .projects .item table, .profile .projects .item th, .profile .projects .item td {
+      .profile .projects .item table,
+      .profile .projects .item th,
+      .profile .projects .item td {
         border: 1px solid #a49393;
         border-collapse: collapse;
         padding: 10px;
