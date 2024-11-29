@@ -361,6 +361,8 @@ img.icon {
         padding: 10px;
         font-size: 14px;
         line-height: 1.5; }
+      .profile .projects .item td a {
+        word-break: break-word; }
       .profile .projects .item th {
         text-align: left; }
 
